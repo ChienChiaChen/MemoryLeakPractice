@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    public void gotoLogin(){
-//        startActivity(LoginActivity.from(this));
-//    }
+    public void gotoLogin(){
+        startActivity(LoginActivity.from(this));
+    }
 }

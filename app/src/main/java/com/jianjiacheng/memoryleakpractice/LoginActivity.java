@@ -4,7 +4,9 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.Context;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -37,10 +39,10 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
-//    public static Intent from(Context context) {
-//        Intent intent = new Intent(context, LoginActivity.class);
-//        return intent;
-//    }
+    public static Intent from(Context context) {
+        Intent intent = new Intent(context, LoginActivity.class);
+        return intent;
+    }
 
     /**
      * Id to identity READ_CONTACTS permission request.
