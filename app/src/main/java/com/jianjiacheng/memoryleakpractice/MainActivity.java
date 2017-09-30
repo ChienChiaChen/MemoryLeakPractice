@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-//        myFirstCallback.removeMySecondCallback(this);
+        myFirstCallback.removeMySecondCallback(this);
         TAG("onDestroy");
     }
 
